@@ -68,6 +68,9 @@
       },
 
       "minecraft:adult_wild": {
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 2
+        },
         "minecraft:on_target_acquired": {
           "event": "minecraft:on_anger",
           "target": "self"
@@ -220,6 +223,7 @@
     },
 
     "components": {
+      "minecraft:leashable": { },
       "minecraft:is_hidden_when_invisible": {
       },
       "minecraft:type_family": {
