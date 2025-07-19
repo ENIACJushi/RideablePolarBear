@@ -1,0 +1,62 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:polar_bear",
+      "materials": {
+        "default": "polar_bear"
+      },
+      "textures": {
+        "default": "textures/entity/polarbear"
+      },
+      "geometry": {
+        "default": "geometry.polarbear"
+      },
+      "animations": {
+        "walk": "animation.quadruped.walk",
+        "move": "animation.polarbear.move",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.polarbear.baby_transform"
+      },
+      "scripts": {
+        "scale": "1.2",
+        "pre_animation": [
+          "v.first_time = 1;",
+          "v.pos_x = v.first_time==1 ? q.position(0) : v.pos_x;",
+          "v.pos_y = v.first_time==1 ? q.position(1) : v.pos_y;",
+          "v.pos_z = v.first_time==1 ? q.position(2) : v.pos_z;",
+          "v.dir_x = v.first_time==1 ? 0 : v.dir_x;",
+          "v.dir_y = v.first_time==1 ? 0 : v.dir_y;",
+          "v.dir_z = v.first_time==1 ? 0 : v.dir_z;",
+
+          "v.temp_dir_x = q.position(0) - v.pos_x;",
+          "v.temp_dir_y = q.position(1) - v.pos_y;",
+          "v.temp_dir_z = q.position(2) - v.pos_z;",
+          "v.is_moving = (v.temp_dir_x!=0)&&(v.temp_dir_y!=0)&&(v.temp_dir_z!=0);",
+          "v.dir_x = v.is_moving ? -v.temp_dir_x : v.dir_x;",
+          "v.dir_y = v.is_moving ? v.temp_dir_y : v.dir_y;",
+          "v.dir_z = v.is_moving ? -v.temp_dir_z : v.dir_z;",
+
+          "v.pos_x = q.position(0);",
+          "v.pos_y = q.position(1);",
+          "v.pos_z = q.position(2);",
+          "v.first_time = v.first_time + 1;"
+        ]
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.polarbear.move"
+        },
+        {
+          "baby": "controller.animation.polarbear.baby"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.polarbear"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg_polar_bear"
+      }
+    }
+  }
+}

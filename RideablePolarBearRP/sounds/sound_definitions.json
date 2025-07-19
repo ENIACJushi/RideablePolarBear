@@ -1,0 +1,12 @@
+{
+   "format_version" : "1.20.20",
+   "sound_definitions" : {
+      "elytra.loop" : {
+         "__use_legacy_max_distance" : "true",
+         "category" : "ui",
+         "max_distance" : null,
+         "min_distance" : 5.0,
+         "sounds" : [ "sounds/elytra/elytra_loop" ]
+      }
+   }
+}

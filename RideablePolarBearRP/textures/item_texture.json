@@ -1,0 +1,15 @@
+{
+   "resource_pack_name" : "vanilla",
+   "texture_data" : {
+      "rpb:golden_clownfish" : {
+         "textures" : "textures/items/fish_clownfish_golden"
+      },
+      "rpb:golden_fish" : {
+         "textures" : "textures/items/fish_golden"
+      },
+      "rpb:golden_salmon" : {
+         "textures" : "textures/items/fish_salmon_golden"
+      }
+   },
+   "texture_name" : "atlas.items"
+}

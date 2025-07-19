@@ -1,0 +1,9 @@
+pack.name=我坐戏子楼台前
+pack.description=作者: 体宿一(b站) | 版本 1.0.0
+
+item.rpb:golden_clownfish=金热带鱼
+item.rpb:golden_fish=金鳕鱼
+item.rpb:golden_salmon=金鲑鱼
+
+action.interact.tame_polar_bear=驯服
+action.hint.exit.polar_bear=轻按潜行可以下别急熊

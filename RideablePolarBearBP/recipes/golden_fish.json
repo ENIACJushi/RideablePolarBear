@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "rpb:golden_fish"
+		},
+		"tags": [ "crafting_table" ],
+		"pattern": [
+			"GGG",
+			"GFG",
+			"GGG"
+		],
+		"key": {
+			"G": {
+				"item": "minecraft:gold_nugget"
+			},
+			"F": {
+				"item": "minecraft:fish"
+			}
+		},
+		"result": {
+			"item": "rpb:golden_fish",
+			"count": 1
+		}
+	}
+}

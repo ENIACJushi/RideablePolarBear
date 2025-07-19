@@ -1,0 +1,9 @@
+pack.name=RideablePolarBear
+pack.description=By: ENIAC_Jushi, version 1.0.0
+
+item.rpb:golden_clownfish=Cooked Clownfish
+item.rpb:golden_fish=Cooked Fish
+item.rpb:golden_salmon=Cooked Salmon
+
+action.interact.tame_polar_bear=tame
+action.hint.exit.polar_bear=Tap sneak to dismount

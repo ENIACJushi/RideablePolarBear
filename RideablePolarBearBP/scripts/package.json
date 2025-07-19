@@ -1,0 +1,14 @@
+{
+  "name": "rideable_polar_bear",
+  "version": "1.0.0",
+  "description": "By: ENIAC_Jushi",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ENIACJushi",
+  "license": "MIT",
+  "devDependencies": {
+    "@minecraft/server": "1.19.0"
+  }
+}
