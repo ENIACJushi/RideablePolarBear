@@ -1,4 +1,4 @@
-import { Player, ItemStack } from '@minecraft/server';
+import {Player, ItemStack, EquipmentSlot} from '@minecraft/server';
 
 export class ItemTools {
   /**
@@ -26,6 +26,15 @@ export class ItemTools {
     let slot = player.selectedSlotIndex;
     // pl.getComponent("equippable").getEquipment(EquipmentSlot.Mainhand);
     return container.getItem(slot);
+  }
+
+  /**
+   * 获取玩家主手物品
+   * @param {Player} player
+   * @returns {ItemStack|undefined}
+   */
+  static getPlayerOffhand(player) {
+    return player.getComponent("equippable").getEquipment(EquipmentSlot.Offhand);
   }
   /**
    * 减少玩家主手装备的耐久

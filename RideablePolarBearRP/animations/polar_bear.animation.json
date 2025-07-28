@@ -6,7 +6,7 @@
 			"bones" : {
 				"root": {
 					"rotation": [
-						"q.is_tamed ? ((v.dir_x+v.dir_z) < 0.05 ? math.min(math.max(q.vertical_speed*-5, -60), 60) : (math.abs(q.body_y_rotation - math.atan2(v.dir_x, -v.dir_z)) > 90 ? -1 : 1) * -math.atan2(q.vertical_speed, q.ground_speed) * math.min(0.7, math.abs(query.vertical_speed/11)) * math.abs(math.cos(q.body_y_rotation - math.atan2(v.dir_x, -v.dir_z)))) : 0",
+						"q.is_tamed ? ((v.dir_x+v.dir_z) < 0.05 ? math.min(math.max(q.vertical_speed*-5, -60), 60) : (math.abs(q.body_y_rotation - math.atan2(v.dir_x, -v.dir_z)) > 90 ? -1 : 1) * -math.atan2(q.vertical_speed, q.ground_speed) * math.min(0.7, math.abs(query.vertical_speed/21)) * math.abs(math.cos(q.body_y_rotation - math.atan2(v.dir_x, -v.dir_z)))) : 0",
 						0,
 						0
 					],
